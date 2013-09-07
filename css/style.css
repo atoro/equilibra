@@ -32,7 +32,7 @@ nav
 {
 	width:950px;
 	margin:auto;
-	height:65px;
+	height:40px;
 }
 #contenido 
 {
@@ -77,11 +77,29 @@ footer
 	width:950px;
 	margin:auto;
 }
-
-
-
-
-
-
-
-
+.botonera 
+{
+	font-family: "raspoutine_classicitalic";
+	font-size: 16px;
+	color: #585858;
+	font-style: normal;
+	text-decoration: none;
+	text-align: center;
+	padding-top: 25px;	
+}
+.botonera:hover
+{
+	font-family: "raspoutine_classicitalic";
+	font-size: 16px;
+	color: #3e903f;
+	font-style: normal;
+	text-decoration: none;
+	text-align: center;
+	padding-top: 25px;	
+}
+ul li 
+{
+	display:inline;
+	padding-left:40px;
+	padding-right:40px;
+}
