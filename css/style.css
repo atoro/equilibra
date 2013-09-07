@@ -1,3 +1,7 @@
+::selection {
+	color: white;
+	background-color: #3e903f;
+}
 ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input
 {
 	margin:0; 
@@ -28,22 +32,29 @@ nav
 	height: 65px;
 	background-color: #f5f5f5;
 }
+ul li 
+{
+	display:inline;
+	padding-left:40px;
+	padding-right:40px;
+}
 #botonera
 {
 	width:950px;
 	margin:auto;
 	height:40px;
 }
+.clear { clear: both; }
 #contenido 
 {
-	height:500px;
+	min-height:470px;
 	width: 950px;
 	margin: auto
 }
 #texto_destacados 
 {
 	width:950px;
-	height:100px;
+	height:75px;
 	margin:auto;
 }
 #contenido_destacados 
@@ -79,7 +90,7 @@ footer
 }
 .botonera 
 {
-	font-family: "raspoutine_classicitalic";
+	font-family: 'raspoutine_mediumitalic';
 	font-size: 16px;
 	color: #585858;
 	font-style: normal;
@@ -89,7 +100,7 @@ footer
 }
 .botonera:hover
 {
-	font-family: "raspoutine_classicitalic";
+	font-family: 'raspoutine_mediumitalic';
 	font-size: 16px;
 	color: #3e903f;
 	font-style: normal;
@@ -97,9 +108,21 @@ footer
 	text-align: center;
 	padding-top: 25px;	
 }
-ul li 
+.texto 
 {
-	display:inline;
-	padding-left:40px;
-	padding-right:40px;
+	font-family: "raspoutine_classicitalic";
+	font-size: 14px;
+	color: #585858;
+	font-style: normal;
+	text-decoration: none;
+	text-align: center;
+}
+.destacados 
+{
+	font-family: 'raspoutine_mediumitalic';
+	font-size: 16px;
+	color: #585858;
+	font-style: normal;
+	text-decoration: none;
+	text-align: center;
 }
