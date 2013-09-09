@@ -1,3 +1,30 @@
+<?php include("Conexion.php"); 
+    $listado = "select * from inicio  ";
+	$sentencia = mysql_query($listado,$conn);
+	if($rs=mysql_fetch_array($sentencia,$mibase)){
+		$descripcion = str_replace("\r\n","<br>",$rs["descripcion"]);
+		
+	}
+	
+	$listado = "select * from destacados  ";
+	$sentencia = mysql_query($listado,$conn);
+	if($rs=mysql_fetch_array($sentencia,$mibase)){
+		$destacado1 = str_replace("\r\n","<br>",$rs["destacado1"]);
+		$contenido1 = str_replace("\r\n","<br>",$rs["contenido1"]);
+		$destacado2 = str_replace("\r\n","<br>",$rs["destacado2"]);
+		$contenido2 = str_replace("\r\n","<br>",$rs["contenido2"]);
+		$destacado3 = str_replace("\r\n","<br>",$rs["destacado3"]);
+		$contenido3 = str_replace("\r\n","<br>",$rs["contenido3"]);
+	}
+	
+	$listado = "select * from datos  ";
+	$sentencia = mysql_query($listado,$conn);
+	if($rs=mysql_fetch_array($sentencia,$mibase)){
+		$datos = str_replace("\r\n","<br>",$rs["datos"]);
+	
+	}			
+?>
+
 <!doctype html>
 <html>
 <head>
@@ -61,9 +88,7 @@ function MM_swapImage() { //v3.0
       <td height="40">&nbsp;</td>
     </tr>
     <tr>
-      <td class="texto">Somos un organismo t&eacute;cnico capacitador (OTEC) orientado a la formaci&oacute;n sustentable de la regi&oacute;n de O&acute;Higgins,<br>
-        surgiendo como una alternativa de capacitaci&oacute;n con un sello especial: la preocupaci&oacute;n por la sustentabilidad <br>
-      para contribuir al desarrollo de una sociedad, con un claro equilibrio entre los &aacute;mbitos ambiental, social y econ&oacute;mico.</td>
+      <td class="texto"><?php echo $descripcion; ?></td>
     </tr>
   </table>
 </div>
@@ -90,15 +115,10 @@ function MM_swapImage() { //v3.0
 	        <tr>
 	          <td height="230" valign="top" bgcolor="#d27a35"><table width="100%" border="0" cellspacing="0" cellpadding="0">
 	            <tr>
-	              <td height="60" class="destacados_texto">Taller Destacado 1</td>
+	              <td height="60" class="destacados_texto"><?php echo $destacado1; ?></td>
 	              </tr>
 	            <tr>
-	              <td valign="top" class="destacados_texto2">Simplemente el texto de relleno<br>
-	                de las imprentas y archivos de<br>
-	                texto. Lorem Ipsum ha sido<br>
-	                el texto de relleno est&aacute;ndar<br>
-	                de las industrias<br>
-	                desde el a&ntilde;o 1500</td>
+	              <td valign="top" class="destacados_texto2"><?php echo $contenido1; ?></td>
 	              </tr>
               </table></td>
             </tr>
@@ -107,15 +127,10 @@ function MM_swapImage() { //v3.0
 	        <tr>
 	          <td height="230" valign="top" bgcolor="#0d569a"><table width="100%" border="0" cellspacing="0" cellpadding="0">
 	            <tr>
-	              <td height="60" class="destacados_texto">Taller Destacado 1</td>
+	              <td height="60" class="destacados_texto"><?php echo $destacado2; ?></td>
 	              </tr>
 	            <tr>
-	              <td valign="top" class="destacados_texto2"><p>Simplemente el texto de relleno<br>
-	                de las imprentas y archivos de<br>
-	                texto. Lorem Ipsum ha sido<br>
-	                el texto de relleno est&aacute;ndar<br>
-	                de las industrias<br>
-	                desde el a&ntilde;o 1500</p></td>
+	              <td valign="top" class="destacados_texto2"><p><?php echo $contenido2; ?></p></td>
 	              </tr>
               </table></td>
             </tr>
@@ -124,15 +139,10 @@ function MM_swapImage() { //v3.0
 	        <tr>
 	          <td height="230" valign="top" bgcolor="#3E903F"><table width="100%" border="0" cellspacing="0" cellpadding="0">
 	            <tr>
-	              <td height="60" class="destacados_texto">Taller Destacado 1</td>
+	              <td height="60" class="destacados_texto"><?php echo $destacado3; ?></td>
 	              </tr>
 	            <tr>
-	              <td valign="top" class="destacados_texto2">Simplemente el texto de relleno<br>
-	                de las imprentas y archivos de<br>
-	                texto. Lorem Ipsum ha sido<br>
-	                el texto de relleno est&aacute;ndar<br>
-	                de las industrias<br>
-	                desde el a&ntilde;o 1500</td>
+	              <td valign="top" class="destacados_texto2"><?php echo $contenido3; ?></td>
 	              </tr>
               </table></td>
             </tr>
@@ -182,7 +192,7 @@ function MM_swapImage() { //v3.0
           </table></td>
         </tr>
 	    <tr>
-	      <td class="destacados_texto2">Correo: capacitacionesequilibra@gmail.com - Tel&eacute;fono: 8230 2081 - 072- 2 57 19 65</td>
+	      <td class="destacados_texto2"><?php echo $datos; ?></td>
         </tr>
       </table>
 	</div>
