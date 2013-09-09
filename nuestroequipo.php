@@ -85,7 +85,7 @@ function MM_swapImage() { //v3.0
         <tr>
           <td width="317" height="364" valign="top"><table width="310" border="0" cellspacing="0" cellpadding="0">
             <tr>
-              <td height="200" valign="top"><img src="imagenes/nuestroequipo/1.jpg" width="310" height="200"></td>
+              <td height="200" valign="top"><img src="imagenes/nuestroequipo/<?php echo $rs["id"]; ?>.jpg" width="310" height="200"></td>
             </tr>
             <tr>
               <td height="48" class="destacados"><?php echo str_replace("\r\n","<br>",$rs["nombre"]);  ?></td>
@@ -97,7 +97,7 @@ function MM_swapImage() { //v3.0
           <?php if($rs=mysql_fetch_array($sentencia,$mibase)){ ?> 
           <td width="316" align="center" valign="top"><table width="310" border="0" cellspacing="0" cellpadding="0">
             <tr>
-              <td height="200" valign="top"><img src="imagenes/nuestroequipo/1.jpg" width="310" height="200"></td>
+              <td height="200" valign="top"><img src="imagenes/nuestroequipo/<?php echo $rs["id"]; ?>.jpg" width="310" height="200"></td>
             </tr>
             <tr>
               <td height="48" class="destacados"><?php echo str_replace("\r\n","<br>",$rs["nombre"]);  ?></td>
@@ -109,7 +109,7 @@ function MM_swapImage() { //v3.0
           <?php if($rs=mysql_fetch_array($sentencia,$mibase)){ ?>
           <td width="317" align="right" valign="top"><table width="310" border="0" cellspacing="0" cellpadding="0">
             <tr>
-              <td height="200" valign="top"><img src="imagenes/nuestroequipo/1.jpg" width="310" height="200"></td>
+              <td height="200" valign="top"><img src="imagenes/nuestroequipo/<?php echo $rs["id"]; ?>.jpg" width="310" height="200"></td>
             </tr>
             <tr>
               <td height="48" class="destacados"><?php echo str_replace("\r\n","<br>",$rs["nombre"]);  ?></td>
