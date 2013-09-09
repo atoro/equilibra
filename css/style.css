@@ -116,12 +116,68 @@ footer
 	font-style: normal;
 	text-decoration: none;
 	text-align: center;
+	padding-right: 5px;
+}
+.detalle_curso 
+{
+	font-family: "raspoutine_classicitalic";
+	font-size: 14px;
+	color: #3e903f;
+	font-style: normal;
+	text-decoration: none;
+	text-align: center;
+	padding-right: 5px;
 }
 .destacados 
 {
 	font-family: 'raspoutine_mediumitalic';
 	font-size: 16px;
 	color: #585858;
+	font-style: normal;
+	text-decoration: none;
+	text-align: center;
+}
+.descargarpdf 
+{
+	font-family: 'raspoutine_mediumitalic';
+	font-size: 14px;
+	color: #585858;
+	font-style: normal;
+	text-decoration: none;
+	text-align: center;
+}
+.descargarpdf:hover
+{
+	font-family: 'raspoutine_mediumitalic';
+	font-size: 14px;
+	color: #3e903f;
+	font-style: normal;
+	text-decoration: none;
+	text-align: center;
+}
+.destacados_texto 
+{
+	font-family: 'raspoutine_mediumitalic';
+	font-size: 16px;
+	color: #fff;
+	font-style: normal;
+	text-decoration: none;
+	text-align: center;
+}
+.footer 
+{
+	font-family: 'raspoutine_mediumitalic';
+	font-size: 12px;
+	color: #8f8f90;
+	font-style: normal;
+	text-decoration: none;
+	text-align: center;
+}
+.destacados_texto2
+{
+	font-family: "raspoutine_classicitalic";
+	font-size: 14px;
+	color: #fff;
 	font-style: normal;
 	text-decoration: none;
 	text-align: center;
