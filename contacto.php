@@ -38,15 +38,15 @@ function MM_swapImage() { //v3.0
 		<div id="headerimg2" class="headerimg"></div>
 	</div>
 </div>
-<nav> 
+<nav>
   <div class="botonera" id="botonera">
-    	<ul> 
-        	<li><a href="index.php" class="botonera">Inicio</a></li>
-            <li><a href="nosotros.php" class="botonera">Nuestro Equipo</a></li>
-            <li><a href="servicios.php" class="botonera">Cursos</a></li>
-            <li><a href="ubicacion.php" class="botonera">Clientes</a></li>
-            <li><a href="contacto.php" class="botonera">Contacto</a></li>
-        </ul>
+    <ul>
+      <li><a href="index.php" class="botonera">Inicio</a></li>
+      <li><a href="nuestroequipo.php" class="botonera">Nuestro Equipo</a></li>
+      <li><a href="cursos.php" class="botonera">Cursos</a></li>
+      <li><a href="clientes.php" class="botonera">Clientes</a></li>
+      <li><a href="contacto.php" class="botonera">Contacto</a></li>
+    </ul>
   </div>
 </nav>
 <div id="contenido">
